@@ -169,3 +169,17 @@
     opacity: .75;
     color: black;
 }
+
+@media screen and (max-width: 480px) {
+    .slick-dots li {
+        width: 20px;
+        
+    }
+
+    .slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 20px;
+}
+}

@@ -1067,3 +1067,130 @@ hr {
     grid-gap: 30px;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .price__list {
+    min-width: 200px;
+  }
+  .price__list-title {
+    font-size: 16px;
+  }
+  .price__list-price {
+    font-size: 16px;
+  }
+  .intro__text {
+    height: 200px;
+  }
+  .intro__title {
+    font-size: 50px;
+  }
+  .intro__subtitle {
+    font-size: 20px;
+  }
+  .me__content-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .me__content-image {
+    width: 400px;
+    height: 500px;
+    margin-bottom: 70px;
+    padding: 0;
+  }
+  .me__content-text {
+    width: 400px;
+    text-align: center;
+    padding: 0 50px;
+  }
+  .portfolio__images-wrapper1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 0;
+  }
+  .portfolio__images-wrapper2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 0;
+  }
+  .portfolio__images-wrapper3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 0;
+  }
+  .portfolio__images-wrapper4 {
+    display: none;
+  }
+  .portfolio__images-wrapper5 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+  .portfolio__images-wrapper6 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro__text {
+    height: 150px;
+  }
+  .intro__title {
+    font-size: 30px;
+  }
+  .intro__subtitle {
+    font-size: 14px;
+  }
+  .me__title {
+    font-size: 24px;
+  }
+  .portfolio__title {
+    font-size: 24px;
+  }
+  .price__title {
+    font-size: 24px;
+  }
+  .footer__title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .me__title {
+    font-size: 24px;
+  }
+  .portfolio__title {
+    font-size: 24px;
+  }
+  .price__title {
+    font-size: 24px;
+  }
+  .footer__title {
+    font-size: 24px;
+  }
+  .me__content-text {
+    font-size: 14px;
+    padding: 0 60px;
+  }
+  .price__list {
+    min-width: 200px;
+  }
+  .price__list-title {
+    font-size: 16px;
+  }
+  .price__list-price {
+    font-size: 16px;
+  }
+}
