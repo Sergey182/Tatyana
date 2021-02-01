@@ -3,6 +3,11 @@ $(document).ready(function() {
         e.preventDefault();
         $('.burger-btn').toggleClass('burger-btn--active');
         $('.header__nav').toggleClass('header__nav--active');
+
+    $('.header__nav').click(function() {
+    $('.burger-btn').removeClass('burger-btn--active');
+    $('.header__nav').removeClass('header__nav--active');
+});
         
     });
     

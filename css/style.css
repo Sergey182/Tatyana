@@ -410,6 +410,7 @@ body {
   font-size: 18px;
   font-family: 'Montserrat';
   background-color: honeydew;
+  overflow-x: hidden;
 }
 
 a {
@@ -1072,6 +1073,9 @@ hr {
   .price__list {
     min-width: 200px;
   }
+  .form__field {
+    width: 300px;
+  }
   .price__list-title {
     font-size: 16px;
   }
@@ -1144,6 +1148,15 @@ hr {
 }
 
 @media screen and (max-width: 480px) {
+  .burger-btn {
+    width: 25px;
+  }
+  .form__field {
+    width: 250px;
+  }
+  .callback-btn {
+    font-size: 18px;
+  }
   .intro__text {
     height: 150px;
   }
@@ -1156,6 +1169,12 @@ hr {
   .me__title {
     font-size: 24px;
   }
+  .me__content-text {
+    font-size: 16px;
+  }
+  .me__wrapper {
+    padding-bottom: 50px;
+  }
   .portfolio__title {
     font-size: 24px;
   }
@@ -1164,6 +1183,9 @@ hr {
   }
   .footer__title {
     font-size: 24px;
+  }
+  .form__submit {
+    width: 250px;
   }
 }
 
