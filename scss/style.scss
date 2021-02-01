@@ -654,11 +654,19 @@ hr {
     grid-gap: 30px;
 }
 
+.intro__text {
+    width: 650px;
+}
+
 
 }
 
 
 @media screen and (max-width: 700px) {
+
+.intro__text {
+    width: 400px;
+}
 
     .price__list {
   
@@ -686,11 +694,11 @@ hr {
 }
 
     .intro__text {
-        height: 200px;
+        height: 170px;
     }
 
     .intro__title {
-    font-size: 50px;
+    font-size: 40px;
     }
 
     .intro__subtitle {
@@ -758,6 +766,11 @@ hr {
 
 @media screen and (max-width: 480px)  {
 
+    .intro__text {
+    width: 290px;
+    height: 120px;
+    }
+
     .burger-btn {
        width: 25px;
     }
@@ -771,9 +784,7 @@ hr {
         font-size: 18px;
     }
 
-    .intro__text {
-        height: 150px;
-    }
+    
 
     .intro__title {
     font-size: 30px;
@@ -781,6 +792,11 @@ hr {
 
     .intro__subtitle {
        font-size: 14px;
+    }
+
+    .me__content-image {
+        width: 250px;
+        height: 300px;
     }
 
     .me__title {
@@ -810,7 +826,10 @@ font-size: 24px;
     .form__submit {
         width: 250px;
     }
+
+    
 }
+
 
 
 @media screen and (max-width: 320px)  {
