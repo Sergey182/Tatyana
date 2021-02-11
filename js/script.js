@@ -1,35 +1,66 @@
-$(document).ready(function() {
-    $('.burger-btn').on('click', function(e) {
+$(document).ready(function () {
+    $('.burger-btn').on('click', function (e) {
         e.preventDefault();
         $('.burger-btn').toggleClass('burger-btn--active');
         $('.header__nav').toggleClass('header__nav--active');
 
-    $('.header__nav').click(function() {
-    $('.burger-btn').removeClass('burger-btn--active');
-    $('.header__nav').removeClass('header__nav--active');
-});
-        
-    });
-    
+        $('.header__nav').click(function () {
+            $('.burger-btn').removeClass('burger-btn--active');
+            $('.header__nav').removeClass('header__nav--active');
+        });
 
-    $("#menu").on("click","a", function (event) {
+    });
+
+    $("#menu").on("click", "a", function (event) {
         event.preventDefault();
-        var id  = $(this).attr('href'),
+        const id = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
 
-
     $('.intro__sliders').slick({
-        autoplay:true,
-        dots:true,
-        infinite:true,
-        pauseOnHover:false,
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    }
-);
+            autoplay: true,
+            dots: true,
+            infinite: true,
+            pauseOnHover: false,
+            speed: 1000,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    );
+
+    $('.name').on('keypress', function () {
+        let that = this;
+
+        setTimeout(function () {
+            let text = /[^а-я ]/g.exec(that.value);
+            that.value = that.value.replace(text, '');
+        }, 0);
+    });
+
+    $(function () {
+        $(".phone").mask("8(999) 999-9999");
+    });
+
+    $(".price__list-button").click(function () {
+        $("#popup").show();
+    });
+
+    $(function () {
+        $("form").submit(function () {
+            $(".submit__success").show();
+            $(".submit__button").hide();
+            setTimeout(function () {
+                $(".submit__success").hide();
+                $("#popup").hide();
+                $(".submit__button").show();
+            }, 1000);
+        })
+    })
+
+    $("#popup__close_button").click(function () {
+        $("#popup").hide();
+    });
 });
 
 
