@@ -1309,4 +1309,9 @@ hr {
   cursor: pointer;
 }
 
+.submit__success {
+  text-align: center;
+  margin-top: 30px;
+}
+
 /*============================POPUP END=================================*/
