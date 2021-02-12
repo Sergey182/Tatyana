@@ -1,0 +1,5 @@
+RewriteEngine on
+DirectoryIndex index.html
+RemoveHandler .html .htm
+AddType application/x-httpd-php .php .htm .html .phtml
+RewriteRule ^index.php$ / [QSA,R]
