@@ -401,10 +401,6 @@ template {
     box-sizing: border-box;
 }
 
-*, *::after, *::before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 body {
     font-size: 18px;
@@ -413,13 +409,13 @@ body {
     overflow-x: hidden;
 }
 
-a {
+.link {
     -webkit-transition: all 0.7s linear;
     transition: all 0.7s linear;
     color: #a0a0a0;
 }
 
-a:hover, a:active, a:focus {
+.link:hover, .link:active, .link:focus {
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
     color: #f3f3f3;
@@ -668,7 +664,7 @@ a:hover, a:active, a:focus {
 .portfolio__images-wrapper1 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [ 2 ];
+    -ms-grid-columns: (2,1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0 20px;
     margin-bottom: 20px;
@@ -677,7 +673,7 @@ a:hover, a:active, a:focus {
 .portfolio__images-wrapper2 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [ 3 ];
+    -ms-grid-columns: (3,1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0 20px;
     margin-bottom: 20px;
@@ -686,7 +682,7 @@ a:hover, a:active, a:focus {
 .portfolio__images-wrapper3 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [ 2 ];
+    -ms-grid-columns: (2,1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0 20px;
     margin-bottom: 20px;
@@ -695,7 +691,7 @@ a:hover, a:active, a:focus {
 .portfolio__images-wrapper4 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [ 3 ];
+    -ms-grid-columns: (3,1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0 20px;
     margin-bottom: 20px;
@@ -704,7 +700,7 @@ a:hover, a:active, a:focus {
 .portfolio__images-wrapper5 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [ 2 ];
+    -ms-grid-columns: (2,1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0 20px;
     margin-bottom: 20px;
@@ -713,7 +709,7 @@ a:hover, a:active, a:focus {
 .portfolio__images-wrapper6 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [ 3 ];
+    -ms-grid-columns: (3,1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0 20px;
     margin-bottom: 100px;
@@ -753,7 +749,7 @@ a:hover, a:active, a:focus {
 .price__grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [ 3 ];
+    -ms-grid-columns: (3,1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     padding: 0 20px;
@@ -986,18 +982,26 @@ hr {
 .fa-vk {
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
+    color:gray
 }
 
-.fa-vk:hover {
+
+.fa-vk:hover, .fa-vk:active, .fa-vk:focus {
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
     color: blue;
 }
+
 
 .fa-instagram {
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
+    color:gray
 }
 
-.fa-instagram:hover {
+.fa-instagram:hover, .fa-instagram:active, .fa-instagram:focus {
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
     color: #ff7b00;
 }
 
@@ -1007,7 +1011,7 @@ hr {
     .price__grid {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1fr) [ 2 ];
+        -ms-grid-columns: (2,1fr);
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
     }
@@ -1070,7 +1074,7 @@ hr {
     .price__grid {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1fr) [ 1 ];
+        -ms-grid-columns: (1,1fr);
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
     }
@@ -1139,7 +1143,7 @@ hr {
     .portfolio__images-wrapper1 {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1fr) [ 1 ];
+        -ms-grid-columns: (1,1fr);
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 0;
     }
@@ -1147,7 +1151,7 @@ hr {
     .portfolio__images-wrapper2 {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1fr) [ 1 ];
+        -ms-grid-columns: (1,1fr);
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 0;
     }
@@ -1155,7 +1159,7 @@ hr {
     .portfolio__images-wrapper3 {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1fr) [ 1 ];
+        -ms-grid-columns: (1,1fr);
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 0;
     }
@@ -1167,7 +1171,7 @@ hr {
     .portfolio__images-wrapper5 {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1fr) [ 1 ];
+        -ms-grid-columns: (1,1fr);
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 20px;
     }
