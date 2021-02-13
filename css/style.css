@@ -1323,6 +1323,7 @@ hr {
     text-align: center;
     padding: 15px;
     margin-bottom: 25px;
+    border: 1px solid gray;
 }
 
 .popup__field:focus {
