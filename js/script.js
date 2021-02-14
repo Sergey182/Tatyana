@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(elements).lazyLoadXT();
     $('.burger-btn').on('click', function (e) {
         e.preventDefault();
         $('.burger-btn').toggleClass('burger-btn--active');
@@ -45,18 +46,6 @@ $(document).ready(function () {
     $(".price__list-button").click(function () {
         $("#popup").show();
     });
-
-    $(function () {
-        $("form").submit(function () {
-            $(".submit__success").show();
-            $(".submit__button").hide();
-            setTimeout(function () {
-                $(".submit__success").hide();
-                $("#popup").hide();
-                $(".submit__button").show();
-            }, 1000);
-        })
-    })
 
     $("#popup__close_button").click(function () {
         $("#popup").hide();
