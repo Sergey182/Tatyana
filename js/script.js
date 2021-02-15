@@ -1,19 +1,12 @@
 $(document).ready(function () {
-    $(elements).lazyLoadXT();
     $('.burger-btn').on('click', function (e) {
         e.preventDefault();
         $('.burger-btn').toggleClass('burger-btn--active');
         $('.header__nav').toggleClass('header__nav--active');
-
-        $('.header__nav').click(function () {
-            $('.burger-btn').removeClass('burger-btn--active');
-            $('.header__nav').removeClass('header__nav--active');
-        });
-
     });
 
-    $("#menu").on("click", "a", function (event) {
-        event.preventDefault();
+    $("#menu").on("click", "a", function (e) {
+        e.preventDefault();
         const id = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
@@ -32,7 +25,6 @@ $(document).ready(function () {
 
     $('.name').on('keypress', function () {
         let that = this;
-
         setTimeout(function () {
             let text = /[^а-я ]/g.exec(that.value);
             that.value = that.value.replace(text, '');

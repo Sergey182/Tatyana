@@ -18,8 +18,7 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
+    font: 100% inherit;
     vertical-align: baseline;
 }
 
@@ -43,7 +42,6 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
     content: none;
 }
 
@@ -72,7 +70,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 /**
@@ -404,7 +402,7 @@ template {
 
 body {
     font-size: 18px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', serif;
     background-color: honeydew;
     overflow-x: hidden;
 }
@@ -664,7 +662,7 @@ body {
 .portfolio__images-wrapper1 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (2,1fr);
+    -ms-grid-columns: 2fr 1fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 20px;
     margin-bottom: 20px;
@@ -673,7 +671,7 @@ body {
 .portfolio__images-wrapper2 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (3,1fr);
+    -ms-grid-columns: 3fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 20px;
     margin-bottom: 20px;
@@ -682,7 +680,7 @@ body {
 .portfolio__images-wrapper3 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (2,1fr);
+    -ms-grid-columns: 2fr 1fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 20px;
     margin-bottom: 20px;
@@ -691,7 +689,7 @@ body {
 .portfolio__images-wrapper4 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (3,1fr);
+    -ms-grid-columns: 3fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 20px;
     margin-bottom: 20px;
@@ -700,7 +698,7 @@ body {
 .portfolio__images-wrapper5 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (2,1fr);
+    -ms-grid-columns: 2fr 1fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 20px;
     margin-bottom: 20px;
@@ -709,7 +707,7 @@ body {
 .portfolio__images-wrapper6 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (3,1fr);
+    -ms-grid-columns: 3fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 20px;
     margin-bottom: 100px;
@@ -749,7 +747,7 @@ body {
 .price__grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (3,1fr);
+    -ms-grid-columns: 3fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 0 20px;
@@ -773,13 +771,13 @@ body {
     min-width: 380px;
     height: auto;
     border: 1px solid rgba(216, 216, 216, 0.589);
-    -webkit-box-shadow: 4px 4px 5px 0px rgba(231, 231, 231, 0.336);
-    box-shadow: 4px 4px 5px 0px rgba(231, 231, 231, 0.336);
+    -webkit-box-shadow: 4px 4px 5px 0 rgba(231, 231, 231, 0.336);
+    box-shadow: 4px 4px 5px 0 rgba(231, 231, 231, 0.336);
 }
 
 .price__list:hover {
-    -webkit-box-shadow: 0px 0px 0px 0px rgba(236, 236, 236, 0.336);
-    box-shadow: 0px 0px 0px 0px rgba(236, 236, 236, 0.336);
+    -webkit-box-shadow: 0 0 0 0 rgba(236, 236, 236, 0.336);
+    box-shadow: 0 0 0 0 rgba(236, 236, 236, 0.336);
 }
 
 .price__list-content {
@@ -845,13 +843,13 @@ body {
     background-color: transparent;
     border: 1px solid grey;
     text-transform: uppercase;
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(102, 101, 101, 0.336);
-    box-shadow: 2px 2px 5px 0px rgba(102, 101, 101, 0.336);
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(102, 101, 101, 0.336);
+    box-shadow: 2px 2px 5px 0 rgba(102, 101, 101, 0.336);
 }
 
 .price__list-button:active {
-    -webkit-box-shadow: 0px 0px 0px 0px rgba(102, 101, 101, 0.336);
-    box-shadow: 0px 0px 0px 0px rgba(102, 101, 101, 0.336);
+    -webkit-box-shadow: 0 0 0 0 rgba(102, 101, 101, 0.336);
+    box-shadow: 0 0 0 0 rgba(102, 101, 101, 0.336);
 }
 
 /*===SECTION PRICE end===*/
@@ -982,7 +980,7 @@ hr {
 .fa-vk {
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
-    color:gray
+    color: gray
 }
 
 
@@ -996,7 +994,7 @@ hr {
 .fa-instagram {
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
-    color:gray
+    color: gray
 }
 
 .fa-instagram:hover, .fa-instagram:active, .fa-instagram:focus {
@@ -1011,7 +1009,7 @@ hr {
     .price__grid {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (2,1fr);
+        -ms-grid-columns: 2fr 1fr;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
@@ -1074,7 +1072,7 @@ hr {
     .price__grid {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1,1fr);
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
@@ -1143,7 +1141,7 @@ hr {
     .portfolio__images-wrapper1 {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1,1fr);
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 0;
     }
@@ -1151,7 +1149,7 @@ hr {
     .portfolio__images-wrapper2 {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1,1fr);
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 0;
     }
@@ -1159,7 +1157,7 @@ hr {
     .portfolio__images-wrapper3 {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1,1fr);
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 0;
     }
@@ -1171,7 +1169,7 @@ hr {
     .portfolio__images-wrapper5 {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1,1fr);
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 20px;
     }
