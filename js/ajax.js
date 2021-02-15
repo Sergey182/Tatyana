@@ -1,13 +1,12 @@
 $(document).ready(function () {
     function showSuccess(jsonData) {
-        console.log(jsonData)
         $(".submit__button").hide();
         $(".submit__success").text(jsonData['response']).show();
         setTimeout(function () {
             $(".submit__success").text('').hide();
             $("#popup").hide();
             $(".submit__button").show();
-        }, 10000);
+        }, 5000);
     }
 
     $(document).on('submit', '.submit__form', function (e) {
