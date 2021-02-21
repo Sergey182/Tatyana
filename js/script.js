@@ -1,8 +1,13 @@
 $(document).ready(function () {
     $('.burger-btn').on('click', function (e) {
         e.preventDefault();
+        let headerNav = $('.header__nav');
         $('.burger-btn').toggleClass('burger-btn--active');
-        $('.header__nav').toggleClass('header__nav--active');
+        headerNav.toggleClass('header__nav--active');
+        headerNav.click(function () {
+            $('.burger-btn').removeClass('burger-btn--active');
+            $('.header__nav').removeClass('header__nav--active');
+        });
     });
 
     $("#menu").on("click", "a", function (e) {
